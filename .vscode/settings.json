@@ -1,0 +1,5 @@
+{
+    "emulator.androidColdBoot":true,
+    "emulator.emulatorPathWindows": "C:\\\\Users\\\\<yourUsername>\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\emulator",
+    "emulator.simulatorPath": "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+}
