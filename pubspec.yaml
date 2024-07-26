@@ -71,6 +71,21 @@ flutter:
     - assets/images/categorie.jpg
     - assets/images/add.jpg
     - assets/images/product.jpg
+    - assets/images/pack.jpg
+    - assets/images/dot1.jpg
+    - assets/images/rs.jpg
+    - assets/images/yellow.jpg
+    - assets/images/box.jpg
+    - assets/images/box3.jpg
+    - assets/images/detail.jpg
+    - assets/images/ingrediant.jpg
+    - assets/images/feedback.jpg
+    - assets/images/product1.jpg
+    - assets/images/product2.jpg
+    - assets/images/plus.jpg
+    - assets/images/minus.jpg
+    
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
