@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project7/widget/product_detail.dart';
+import 'package:project7/widget/profile.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -161,13 +162,23 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Card()));
+                  },
                   icon: Icon(
                     Icons.shopping_bag_outlined,
                   ),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const Profile()));
+                  },
                   icon: Icon(
                     Icons.person_outlined,
                     color: Color.fromRGBO(65, 87, 255, 1),

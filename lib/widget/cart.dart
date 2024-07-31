@@ -10,7 +10,8 @@ class Cart extends StatefulWidget {
 class _CartState extends State<Cart> {
   int number = 1;
   int price = 25;
-  num add = 25 + 25;
+  int price2 = 18;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +68,9 @@ class _CartState extends State<Cart> {
                   Padding(
                     padding: const EdgeInsets.only(left: 10),
                     child: TextButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {});
+                        },
                         child: Text(
                           "Rs.$price",
                           style: const TextStyle(
@@ -98,7 +101,8 @@ class _CartState extends State<Cart> {
                       onTap: () {
                         setState(() {
                           number++;
-                          print(price);
+                          num adding = price + price;
+                          print(adding);
                         });
                       },
                       child: Padding(
@@ -111,12 +115,100 @@ class _CartState extends State<Cart> {
               Padding(
                 padding: const EdgeInsets.only(left: 330),
                 child: Icon(
-                  Icons.cancel,
-                  color: Colors.white,
+                  Icons.cancel_outlined,
+                  color: Colors.black,
                 ),
               )
             ],
-          )
+          ),
+          Stack(
+            children: [
+              Container(
+                padding: EdgeInsets.only(
+                  right: 250,
+                ),
+                height: 100,
+                width: MediaQuery.of(context).size.width,
+                child: Image.asset("assets/images/product2.jpg"),
+              ),
+              Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(left: 70, top: 10),
+                    child: Text(
+                      "Sugar free gold",
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 100),
+                    child: Text("bottle of 500 pellets"),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: TextButton(
+                        onPressed: () {
+                          setState(() {});
+                        },
+                        child: Text(
+                          "Rs.$price",
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.black),
+                        )),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          number--;
+                          print(price);
+                        });
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 270, top: 60),
+                        child: Container(
+                            child: Image.asset("assets/images/minus.jpg")),
+                      )),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 60),
+                    child: Text("$number"),
+                  ),
+                  GestureDetector(
+                      onTap: () {
+                        setState(() {
+                          number++;
+                          num adding = price + price;
+                          print(adding);
+                        });
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 60),
+                        child: Container(
+                            child: Image.asset("assets/images/plus.jpg")),
+                      ))
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 330),
+                child: Icon(
+                  Icons.cancel_outlined,
+                  color: Colors.black,
+                ),
+              )
+            ],
+          ),
+          Row(
+            children: [
+              Text(
+                "Payment Summary",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              )
+            ],
+          ),
+         
         ],
       ),
     );

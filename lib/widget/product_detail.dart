@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project7/widget/cart.dart';
 
 class ProductDetail extends StatefulWidget {
   const ProductDetail({super.key});
@@ -181,7 +180,7 @@ class _ProductDetailState extends State<ProductDetail> {
             child: ElevatedButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Cart()));
+                    MaterialPageRoute(builder: (context) => const Card()));
               },
               child: Text(
                 "Go to Cart",
